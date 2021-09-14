@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
 
+
 <head>
+    {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -61,7 +63,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ml=auto">
                         <a class="nav-link" href="#">Twitter</a>
-                        <a class="nav-link" href="#">Resume</a>
+                        <a class="nav-link" href="{% static 'resume.pdf' %}">Resume</a>
                         <a class="nav-link" href="#">Blog</a>
                     </div>
                 </div>
@@ -75,10 +77,12 @@
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="fw-light">Hi I am rajat</h1>
+                    <img src="{% static 'photo.jpg' %}" length="200" width="200"/>
                     <p class="lead text-muted">My name is Rajat i am django developer.</p>
                     <p>
                         <a href="mailto:rjasrotia150395@gmail.com" class="btn btn-primary my-2">Email me</a>
                     </p>
+                    
                 </div>
             </div>
         </section>
